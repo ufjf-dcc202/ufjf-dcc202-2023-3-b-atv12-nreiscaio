@@ -1,4 +1,10 @@
-const quantidade = document.entrada.quantidade.value;
-const fruta = document.entrada.fruta.value;
+document.entrada.addEventListener('submit', leFormulario);
 
-console.log(`Eu tenho ${quantidade} ${fruta}`);
+function leFormulario(event){
+    event.preventDefault();
+    const quantidade = document.entrada.quantidade.value;
+    const fruta = document.entrada.fruta.value;
+
+
+    console.log(`Eu tenho ${quantidade} ${fruta}`);
+}
